@@ -1,0 +1,77 @@
+html, body {
+  background: peachpuff;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: stretch;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
+    flex-grow: 1;
+  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: stretch;
+  flex-grow: 1;
+}
+aside {
+  display:flex; 
+  flex-wrap:wrap;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: stretch;
+}
+aside div {
+  min-width:30%;
+}
+main {
+  flex-grow: 1;
+}
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: aqua;
+  }
+
+  aside {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+  }
+  aside div {
+    min-width: 30%;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: red;
+  }
+footer{
+  flex-grow: 1;
+}
+}

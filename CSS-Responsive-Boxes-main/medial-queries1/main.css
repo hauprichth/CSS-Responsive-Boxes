@@ -1,0 +1,72 @@
+html, body {
+  background: blanchedalmond;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: stretch;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: stretch;
+  }
+
+  .a { 
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: blue;    
+  }
+
+  .b {
+      flex-grow: 3;
+      flex-shrink: 0;
+      background-color:blueviolet;
+  }
+
+  .c {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: pink;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .a { 
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color:red;    
+    min-width: 50%;
+    min-height: 30%;
+  }
+
+  .b {
+      flex-grow: 3;
+      flex-shrink: 0;
+      background-color:fuchsia;
+      min-width: 70%;
+      min-height: 70%;
+  }
+
+  .c {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color:lime;
+    min-width: 30%;
+    min-height: 70%;
+  }
+  }

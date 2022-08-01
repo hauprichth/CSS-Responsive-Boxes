@@ -1,0 +1,77 @@
+html, body {
+  background: papayawhip;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: stretch;
+  min-height: 100%;
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: stretch;
+    flex-grow: 1;
+  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: stretch;
+  flex-grow: 1;
+}
+aside {
+  display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: stretch;
+}
+main {
+  flex-grow: 1;
+}
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: aqua;
+  }
+  .inside {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    flex-grow: 3;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: blue;
+  }
+  aside {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    flex-grow: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: red;
+  }
+footer{
+  flex-grow: 1;
+}
+  }
